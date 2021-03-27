@@ -1,5 +1,3 @@
-
-
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -46,11 +44,10 @@ function setup() {
 function draw() 
 {
   background(bgImg);
+  
  star.x = starBody.position.x
  star.y = starBody.position.y
 rectMode (CENTER);
-	
-	
 if(keyCode === RIGHT_ARROW)
 {
 fairy.x = fairy.x - -5
@@ -62,9 +59,9 @@ fairy.x = fairy.x -5
 if (keyCode === UP_ARROW){
 
 	Matter.Body.setStatic(starBody,false)
-if (starBody.position.y > 470) {
+	if (starBody.position.y > 470 ) {
 		
-		Matter.Body.setStatic(starBody,true)
+		Matter.Body.setStatic(starBody, true);
 		
 	}
 
@@ -78,3 +75,5 @@ if (starBody.position.y > 470) {
 function keyPressed() {
 	//write code here
 }
+
+
