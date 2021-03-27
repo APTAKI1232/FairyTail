@@ -1,2 +1,0 @@
-# FairyTail
-tail star
