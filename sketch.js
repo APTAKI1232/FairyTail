@@ -49,6 +49,12 @@ function draw()
  star.x = starBody.position.x
  star.y = starBody.position.y
 rectMode (CENTER);
+	
+	if (starBody.position.y 470) {
+		
+		Matter.Body.setStatic(starBody,false)
+		
+	}
 if(keyCode === RIGHT_ARROW)
 {
 fairy.x = fairy.x - -5
